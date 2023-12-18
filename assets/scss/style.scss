@@ -1,0 +1,17 @@
+// Resets
+@import "./style/01_imports/_reset";
+@import "./style/01_imports/_flavor";
+
+// Settings
+@import "./style/settings-fonts.scss";
+@import "./style/settings-variables.scss";
+@import "./style/settings-general.scss";
+@import "./style/settings-typography.scss";
+
+// Components
+@import "./style/components-basic.scss";
+@import "./style/components-header.scss";
+@import "./style/components-footer.scss";
+
+// Pages
+@import "./style/page-error.scss";

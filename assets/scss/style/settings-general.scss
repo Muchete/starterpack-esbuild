@@ -1,0 +1,28 @@
+/* –––––––––––––––––––––––––––––– GENERAL –––––––––––––––––––––––––––––– */
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+img {
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+a {
+  background-color: yellow;
+}
+
+/* –––––––––––––––––––––––––––––– TABLET –––––––––––––––––––––––––––––– */
+@media only screen and (min-width: $breakpoint-tablet) {
+}
+
+/* –––––––––––––––––––––––––––––– DESKTOP –––––––––––––––––––––––––––––– */
+@media only screen and (min-width: $breakpoint-desktop) {
+}
+
+/* –––––––––––––––––––––––––––––– DESKTOP L –––––––––––––––––––––––––––––– */
+@media only screen and (min-width: $breakpoint-desktop-l) {
+}

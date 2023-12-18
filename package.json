@@ -4,7 +4,12 @@
     "dev": "node assets/assets.config.js"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
-    "esbuild": "^0.19.7"
+    "esbuild": "^0.19.7",
+    "esbuild-sass-plugin": "^2.16.0",
+    "postcss": "^8.4.32",
+    "resolve": "^1.22.8",
+    "sass": "^1.69.5"
   }
 }
