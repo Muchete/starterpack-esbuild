@@ -25,4 +25,4 @@ npm install
 npm run dev
 ```
 
-To customize the build process, refer to the [assets.config.js](assets/assets.config.js) file. By default, the script compiles `assets/js/main.js` and `assets/css/style.css`, but you can modify the `jsFiles` and `cssFiles` variables.
+To customize the build process, refer to the [assets.config.js](assets/assets.config.js) file. By default, the script compiles `assets/js/main.js` and `assets/scss/style.scss`, but you can modify the `jsFiles` and `cssFiles` variables.
