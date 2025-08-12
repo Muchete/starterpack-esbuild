@@ -6,6 +6,7 @@ import esbuild from "esbuild";
 import browserSync from "browser-sync";
 
 import { fileURLToPath } from "url";
+import os from "os";
 import path from "path";
 import { sassPlugin } from "esbuild-sass-plugin";
 import postcss from "postcss";
@@ -34,12 +35,16 @@ const cssFiles = ["assets/scss/style.scss"];
 const browserSyncInstance = browserSync.create();
 
 browserSyncInstance.init({
-  proxy: domain, // Set the proxy to the valet domain
+  proxy: `https://${domain}`, // ensure https here
   host: domain, // Set the host to the valet domain
   open: "external", // Automatically open the valet domain in the browser
   reloadOnRestart: true, // Reload the browser when we restart the server
   notify: false, // I don't want to see the BrowserSync notification in the browser
   ui: false, // Disable the BrowserSync UI
+  https: { //load valet SSL certificates
+    key: path.join(os.homedir(), `.config/valet/Certificates/${domain}.key`),
+    cert: path.join(os.homedir(), `.config/valet/Certificates/${domain}.crt`),
+  }
 });
 
 // --------------------------------------------------
