@@ -1,13 +1,15 @@
+@use "./settings-variables";
+
 /* ––––––––––BASIC ELEMENTS–––––––––– */
 
 /* –––––––––––––––––––––––––––––– TABLET –––––––––––––––––––––––––––––– */
-@media only screen and (min-width: $breakpoint-tablet) {
+@media only screen and (min-width: settings-variables.$breakpoint-tablet) {
 }
 
 /* –––––––––––––––––––––––––––––– DESKTOP –––––––––––––––––––––––––––––– */
-@media only screen and (min-width: $breakpoint-desktop) {
+@media only screen and (min-width: settings-variables.$breakpoint-desktop) {
 }
 
 /* –––––––––––––––––––––––––––––– DESKTOP L –––––––––––––––––––––––––––––– */
-@media only screen and (min-width: $breakpoint-desktop-l) {
+@media only screen and (min-width: settings-variables.$breakpoint-desktop-l) {
 }

@@ -1,17 +1,17 @@
 // Resets
-@import "./style/01_imports/_reset";
-@import "./style/01_imports/_flavor";
+@use "./style/01_imports/_reset";
+@use "./style/01_imports/_flavor";
 
 // Settings
-@import "./style/settings-fonts.scss";
-@import "./style/settings-variables.scss";
-@import "./style/settings-general.scss";
-@import "./style/settings-typography.scss";
+@use "./style/settings-fonts";
+@use "./style/settings-variables";
+@use "./style/settings-general";
+@use "./style/settings-typography";
 
 // Components
-@import "./style/components-basic.scss";
-@import "./style/components-header.scss";
-@import "./style/components-footer.scss";
+@use "./style/components-basic";
+@use "./style/components-header";
+@use "./style/components-footer";
 
 // Pages
-@import "./style/page-error.scss";
+@use "./style/page-error";
