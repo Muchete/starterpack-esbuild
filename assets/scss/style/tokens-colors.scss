@@ -1,0 +1,142 @@
+@mixin light-mode {
+  :root {
+    /* primary colors */
+    --color-primary-default: none;
+    --color-primary-hover: none;
+    --color-primary-active: none;
+    --color-primary-on-primary: none;
+    --color-primary-on-primary-hover: var(
+      --color-primary-on-primary
+    ); /* only necessary when different from default */
+    --color-primary-on-primary-active: var(
+      --color-primary-on-primary
+    ); /* only necessary when different from default */
+
+    /* secondary colors */
+    --color-secondary-default: none;
+    --color-secondary-hover: none;
+    --color-secondary-active: none;
+    --color-secondary-on-secondary: none;
+    --color-secondary-on-secondary-hover: var(
+      --color-secondary-on-secondary
+    ); /* only necessary when different from default */
+    --color-secondary-on-secondary-active: var(
+      --color-secondary-on-secondary
+    ); /* only necessary when different from default */
+
+    /* ghost colors */
+    --color-ghost-default: none;
+    --color-ghost-hover: none;
+    --color-ghost-active: none;
+    --color-ghost-on-ghost: none;
+    --color-ghost-on-ghost-hover: var(
+      --color-ghost-on-ghost
+    ); /* only necessary when different from default */
+    --color-ghost-on-ghost-active: var(
+      --color-ghost-on-ghost
+    ); /* only necessary when different from default */
+
+    /* disabled colors */
+    --color-disabled-default: none;
+    --color-disabled-on-disabled: none;
+
+    /* focus color */
+    --color-focus: var(--core-color-lavender-5);
+
+    /* surface colors */
+    --color-surface-default: none;
+    --color-surface-background: none;
+    --color-surface-container: none;
+    --color-surface-tooltip: none;
+    --color-surface-overlay: none;
+
+    /* text colors */
+    --color-on-surface-default: none;
+    --color-on-surface-medium-intensity: none;
+    --color-on-surface-low-intensity: none;
+    --color-on-surface-inverted: none;
+
+    /* border colors */
+    --color-border-default: none;
+  }
+}
+
+@mixin dark-mode {
+  :root {
+    /* primary colors */
+    --color-primary-default: none;
+    --color-primary-hover: none;
+    --color-primary-active: none;
+    --color-primary-on-primary: none;
+    --color-primary-on-primary-hover: var(
+      --color-primary-on-primary
+    ); /* only necessary when different from default */
+    --color-primary-on-primary-active: var(
+      --color-primary-on-primary
+    ); /* only necessary when different from default */
+
+    /* secondary colors */
+    --color-secondary-default: none;
+    --color-secondary-hover: none;
+    --color-secondary-active: none;
+    --color-secondary-on-secondary: none;
+    --color-secondary-on-secondary-hover: var(
+      --color-secondary-on-secondary
+    ); /* only necessary when different from default */
+    --color-secondary-on-secondary-active: var(
+      --color-secondary-on-secondary
+    ); /* only necessary when different from default */
+
+    /* ghost colors */
+    --color-ghost-default: none;
+    --color-ghost-hover: none;
+    --color-ghost-active: none;
+    --color-ghost-on-ghost: none;
+    --color-ghost-on-ghost-hover: var(
+      --color-ghost-on-ghost
+    ); /* only necessary when different from default */
+    --color-ghost-on-ghost-active: var(
+      --color-ghost-on-ghost
+    ); /* only necessary when different from default */
+
+    /* disabled colors */
+    --color-disabled-default: none;
+    --color-disabled-on-disabled: none;
+
+    /* focus color */
+    --color-focus: var(--core-color-lavender-5);
+
+    /* surface colors */
+    --color-surface-default: none;
+    --color-surface-background: none;
+    --color-surface-container: none;
+    --color-surface-tooltip: none;
+    --color-surface-overlay: none;
+
+    /* text colors */
+    --color-on-surface-default: none;
+    --color-on-surface-medium-intensity: none;
+    --color-on-surface-low-intensity: none;
+    --color-on-surface-inverted: none;
+
+    /* border colors */
+    --color-border-default: none;
+  }
+}
+
+// light theme colors by default
+@include light-mode;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-mode;
+  }
+}
+
+body.light {
+  @include light-mode;
+}
+
+body.dark {
+  @include dark-mode;
+}

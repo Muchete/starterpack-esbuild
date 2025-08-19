@@ -1,0 +1,153 @@
+// generated colors here: https://colorbox.io/?c0=%26p%24s%24%3D08%26p%24h%24st%24%3D60%26p%24h%24e%24%3D77%26p%24h%24c%24%3Dl%26p%24sa%24st%24%3D0.08%26p%24sa%24e%24%3D.9%26p%24sa%24r%24%3D1%26p%24sa%24c%24%3Deqo%26p%24b%24st%24%3D1%26p%24b%24e%24%3D0.06%26p%24b%24c%24%3Deqo%26o%24n%24%3Dgreen%26o%24ms%24%3D0%2C1%26o%24ro%24%3Dcw%26o%24lockHex%24%3Dfffff2&c1=%26p%24s%24%3D8%26p%24h%24st%24%3D0%26p%24h%24e%24%3D0%26p%24h%24c%24%3Dl%26p%24sa%24st%24%3D0%26p%24sa%24e%24%3D0%26p%24sa%24r%24%3D1%26p%24sa%24c%24%3Deqo%26p%24b%24st%24%3D0.99%26p%24b%24e%24%3D0.01%26p%24b%24c%24%3Dl%26o%24n%24%3Dmono%26o%24ro%24%3Dcw%26o%24ms%24%3D0%2C1&c2=%26p%24s%24%3D8%26p%24h%24st%24%3D237%26p%24h%24e%24%3D248%26p%24h%24c%24%3Deqi%26p%24sa%24st%24%3D0.04%26p%24sa%24e%24%3D0.83%26p%24sa%24r%24%3D1%26p%24sa%24c%24%3Deqo%26p%24b%24st%24%3D1%26p%24b%24e%24%3D0.05%26p%24b%24c%24%3Deci%26o%24n%24%3Dlavender%26o%24ro%24%3Dcw%26o%24ms%24%3D0%2C1
+
+:root {
+
+
+  
+  --color-primary-default: none;
+  --color-primary-hover: none;
+  --color-primary-active: none;
+  --color-primary-on-primary: none;
+  --color-primary-on-primary-hover: var(--color-primary-on-primary); /* only necessary when different from default */
+  --color-primary-on-primary-active: var(--color-primary-on-primary); /* only necessary when different from default */
+  
+  --color-secondary-default: none;
+  --color-secondary-hover: none;
+  --color-secondary-active: none;
+  --color-secondary-on-secondary: none;
+  --color-secondary-on-secondary-hover: var(--color-secondary-on-secondary); /* only necessary when different from default */
+  --color-secondary-on-secondary-active: var(--color-secondary-on-secondary); /* only necessary when different from default */
+  
+  --color-ghost-default: none;
+  --color-ghost-hover: none;
+  --color-ghost-active: none;
+  --color-ghost-on-ghost: none;
+  --color-ghost-on-ghost-hover: var(--color-ghost-on-ghost); /* only necessary when different from default */
+  --color-ghost-on-ghost-active: var(--color-ghost-on-ghost); /* only necessary when different from default */
+  
+  --color-disabled-default: none;
+  --color-disabled-on-disabled: none;
+  
+  --color-focus: var(--core-color-lavender-5);
+
+  --color-surface-default: none;
+  --color-surface-background: none;
+  --color-surface-container: none;
+  --color-surface-tooltip: none;
+  --color-surface-overlay: none;
+
+  --color-on-surface-default: none;
+  --color-on-surface-medium-intensity: none;
+  --color-on-surface-low-intensity: none;
+  --color-on-surface-inverted: none;
+
+  --color-border-default: none;
+
+
+
+
+
+  --border-width-none: 0;
+  --border-width-xs: 0.0625rem; /* 1px */
+  --border-width-sm: 0.125rem; /* 2px */
+  --border-width-md: 0.1875rem; /* 3px */
+  --border-width-lg: 0.25rem; /* 4px */
+
+  --border-radius-sm: 0.125rem; /* 2px */
+  --border-radius-md: 0.25rem; /* 4px */
+  --border-radius-lg: 0.5rem; /* 8px */
+  --border-radius-xl: 0.75rem; /* 12px */
+  --border-radius-2xl: 1rem; /* 16px */
+  --border-radius-3xl: 1.5rem; /* 24px */
+  --border-radius-4xl: 2rem; /* 32px */
+  --border-radius-full: 50%;
+
+  --spacing-0: 0rem;      /* 0px */
+  --spacing-1: 0.0625rem; /* 1px */
+  --spacing-2: 0.125rem;  /* 2px */
+  --spacing-4: 0.25rem;   /* 4px */
+  --spacing-6: 0.375rem;  /* 6px */
+  --spacing-8: 0.5rem;    /* 8px */
+  --spacing-10: 0.625rem; /* 10px */
+  --spacing-12: 0.75rem;  /* 12px */
+  --spacing-16: 1rem;     /* 16px */
+  --spacing-20: 1.25rem;  /* 20px */
+  --spacing-24: 1.5rem;   /* 24px */
+  --spacing-32: 2rem;     /* 32px */
+  --spacing-40: 2.5rem;   /* 40px */
+
+
+
+
+
+
+
+
+
+
+
+  /* ––––––––– GENERAL ––––––––– */
+  --color-surface-default: var(--color-beige-200);
+
+  /* ––––––––– BUTTON ––––––––– */
+  --color-button-primary-bg: var(--color-beige-900);
+  --color-button-primary-text: var(--color-beige-200);
+
+  --color-button-primary-bg-hover: var(--color-beige-800);
+  --color-button-primary-text-hover: var(--color-beige-100);
+
+  --color-button-primary-bg-disabled: var(--color-beige-400);
+  --color-button-primary-text-disabled: var(--color-beige-100);
+
+  /* ––––––––– ICON BUTTON ––––––––– */
+  --color-icon-button-ghost-bg: none;
+  --color-icon-button-ghost-bg-hover: var(--color-beige-300);
+
+  /* –––--–––– RADUIS –--–––––– */
+  --radius-small: 0.125rem;
+  --radius-medium: 0.25rem;
+  --radius-large: 0.5rem;
+  --radius-full: 50%;
+
+  /* –––--–––– STROKE --–––––– */
+  --stroke-thin: 0.0625rem; /* 1px */
+  --stroke-default: 0.125rem; /* 2px */
+  --stroke-thick: 0.25rem; /* 4px */
+
+  /* ––––––– ANIMATIONS ––––––– */
+  --duration-animation: 0.2s;
+  --duration-animation-long: 0.3s;
+}
+
+// /* ––––––– DARK MODE ––––––– */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     /* Inverted beige scale for dark mode */
+//     --color-beige-900: #ffffff;
+//     --color-beige-800: #fffcfd;
+//     --color-beige-700: #fffff2;
+//     --color-beige-600: #e1e2d6;
+//     --color-beige-500: #c2c5bb;
+//     --color-beige-400: #a5a89f;
+//     --color-beige-300: #878a83;
+//     --color-beige-200: #6a6d67;
+//     --color-beige-100: #4d504c;
+//     --color-beige-050: #313330;
+
+//     --color-surface-default: var(--color-beige-050);
+
+//     /* Buttons */
+//     --color-button-primary-bg: var(--color-beige-100);
+//     --color-button-primary-text: var(--color-beige-900);
+
+//     --color-button-primary-bg-hover: var(--color-beige-200);
+//     --color-button-primary-text-hover: var(--color-beige-800);
+
+//     --color-button-primary-bg-disabled: var(--color-beige-400);
+//     --color-button-primary-text-disabled: var(--color-beige-700);
+
+//     /* Icon Buttons */
+//     --color-icon-button-ghost-bg: none;
+//     --color-icon-button-ghost-bg-hover: var(--color-beige-700);
+//   }
+// }
