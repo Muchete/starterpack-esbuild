@@ -2,6 +2,13 @@
 @use "./style/01_imports/_reset";
 @use "./style/01_imports/_flavor";
 
+// Tokens
+@use "./style/tokens-core-colors";
+@use "./style/tokens-dimensions";
+@use "./style/tokens-colors";
+@use "./style/tokens-breakpoints";
+@use "./style/tokens-animations";
+
 // Settings
 @use "./style/settings-fonts";
 @use "./style/settings-variables";
