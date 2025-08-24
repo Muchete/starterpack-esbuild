@@ -41,7 +41,7 @@ browserSyncInstance.init({
   reloadOnRestart: true, // Reload the browser when we restart the server
   notify: false, // I don't want to see the BrowserSync notification in the browser
   ui: false, // Disable the BrowserSync UI
-  https: { //load valet SSL certificates
+  https: { //load valet SSL certificate
     key: path.join(os.homedir(), `.config/valet/Certificates/${domain}.key`),
     cert: path.join(os.homedir(), `.config/valet/Certificates/${domain}.crt`),
   }
